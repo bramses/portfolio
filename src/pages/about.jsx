@@ -24,18 +24,26 @@ const About = () => (
           <li>Software Engineer</li>
           <li>Developer Advocate</li>
           <li>Runway Model</li>
-          <li>Music Producer</li>
+        </ul>
+        <h2 className="subtitle">Where I Want To Go:</h2>
+        <ul className="content">
+          <li>Actor</li>
+          <li>Musician</li>
+          <li>Author</li>
           <li>Consultant</li>
+          <li>Public Speaker</li>
+          <li>Online Educator</li>
         </ul>
         <h2 className="subtitle">How Can I Help You?</h2>
         <ul className="content">
           <li>Educational Content</li>
-          <li>Demos and Blog Posts</li>
+          <li>Video Demos and Blog Posts</li>
           <li>Live Talks</li>
           <li>Web Apps</li>
           <li>Web Sites</li>
           <li>Project Management</li>
           <li>Mobile Apps</li>
+          <li>Positioning</li>
         </ul>
       </div>
     </div>
