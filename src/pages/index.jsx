@@ -87,7 +87,7 @@ I like
             <p>
               For all buisness inquires, contact:
               {' '}
-              <strong>paretobits @ gmail . com</strong>
+              <strong>hello@bramadams.dev</strong>
             </p>
             <p>
               <span><a href="https://www.linkedin.com/in/brammadams/">LinkedIn</a></span>
