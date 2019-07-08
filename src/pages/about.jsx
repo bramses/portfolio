@@ -15,9 +15,28 @@ const About = () => (
     <div className="hero-body">
       <div className="container">
         <h1 className="title">About Me</h1>
-        <p>
-        I’m Joma, I make videos on YouTube for people who want to get into the tech industry.nnel
-        </p>
+        <h2 className="subtitle">What I Am:</h2>
+        <ul className="content">
+          <li>A person interested in many different fields</li>
+        </ul>
+        <h2 className="subtitle">Where I&apos;ve Been:</h2>
+        <ul className="content">
+          <li>Software Engineer</li>
+          <li>Developer Advocate</li>
+          <li>Runway Model</li>
+          <li>Music Producer</li>
+          <li>Consultant</li>
+        </ul>
+        <h2 className="subtitle">How Can I Help You?</h2>
+        <ul className="content">
+          <li>Educational Content</li>
+          <li>Demos and Blog Posts</li>
+          <li>Live Talks</li>
+          <li>Web Apps</li>
+          <li>Web Sites</li>
+          <li>Project Management</li>
+          <li>Mobile Apps</li>
+        </ul>
       </div>
     </div>
     <div className="hero-foot">

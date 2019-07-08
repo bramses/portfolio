@@ -67,7 +67,7 @@ I like
 , coding,
                     {' '}
                     <span style={{ textDecoration: 'underline' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('YouTube')} onClick={() => this.openBlurb('YouTube')}>making videos</span>
-, acting, and giving talks.
+, acting, giving talks, and most of all: learning ^_^!
                   </h2>
                   { showBlurbBlog && <Blurb link="https://usrbinblog.com/" onClick={() => this.closeBlurb('Blog')} header="/usr/bin/blog/" body="is a tech blog where I discuss tech, personal finance, and personal development, with occasional smatterings of etc." /> }
                   { showBlurbYouTube && <Blurb link="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g" onClick={() => this.closeBlurb('YouTube')} header="The Important Bits" body="is a channel focused on curiousity and rapid acquisition of skills using the Pareto Principle to find where input has outsized impact." /> }
