@@ -50,6 +50,7 @@ class IndexPage extends Component {
                     <a href="#about" className="navbar-item">
                       About
                     </a>
+                    <a href="#footer" className="navbar-item">Contact</a>
                   </div>
                 </div>
               </div>
@@ -82,12 +83,12 @@ I like
           </div>
         </section>
         <About />
-        <footer className="footer">
+        <footer className="footer" id="footer">
           <div className="content has-text-centered">
             <p>
               For all buisness inquires, contact:
               {' '}
-              <strong>hello@bramadams.dev</strong>
+              <strong>paretobits@gmail.com</strong>
             </p>
             <p>
               <span><a href="https://www.linkedin.com/in/brammadams/">LinkedIn</a></span>

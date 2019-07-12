@@ -5,6 +5,7 @@ import urLogo from '../images/ur-logo.png';
 import algoliaLogo from '../images/algolia-logo.png';
 import NavBar from '../components/navBar';
 import OrgLogo from '../components/orgLogo';
+import modelPhoto from '../images/model.jpg';
 
 
 const About = () => (
@@ -23,27 +24,28 @@ const About = () => (
         <ul className="content">
           <li>Software Engineer</li>
           <li>Developer Advocate</li>
-          <li>Runway Model</li>
-        </ul>
-        <h2 className="subtitle">Where I Want To Go:</h2>
-        <ul className="content">
-          <li>Actor</li>
-          <li>Musician</li>
-          <li>Author</li>
-          <li>Consultant</li>
-          <li>Public Speaker</li>
-          <li>Online Educator</li>
+          <li>
+            <a href={modelPhoto}>
+Runway Model
+            </a>
+          </li>
         </ul>
         <h2 className="subtitle">How Can I Help You?</h2>
         <ul className="content">
-          <li>Educational Content</li>
-          <li>Video Demos and Blog Posts</li>
-          <li>Live Talks</li>
-          <li>Web Apps</li>
-          <li>Web Sites</li>
+          <li><a href="https://usrbinblog.com/2019/02/27/lexical-scoping-and-improv/">Educational Content</a></li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=VSkXyuXzwlc">Video Demos</a>
+            {' '}
+and
+            {' '}
+            <a href="https://blog.algolia.com/vue-instantsearch-v2/">Blog Posts</a>
+          </li>
+          <li><a href="https://www.youtube.com/watch?v=rbnneSpFp3I">Live Talks</a></li>
+          <li><a href="https://quirky-pasteur-183694.netlify.com/">Web Apps</a></li>
+          <li>Web Sites (like the one you&apos;re on right now! :))</li>
           <li>Project Management</li>
           <li>Mobile Apps</li>
-          <li>Positioning</li>
+          <li>Positioning and Marketing</li>
         </ul>
       </div>
     </div>
