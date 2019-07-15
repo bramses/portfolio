@@ -25,23 +25,23 @@ const About = () => (
           <li>Software Engineer</li>
           <li>Developer Advocate</li>
           <li>
-            <a href={modelPhoto}>
+            <a style={{ textDecoration: 'underline' }} href={modelPhoto}>
 Runway Model
             </a>
           </li>
         </ul>
         <h2 className="subtitle">How Can I Help You?</h2>
         <ul className="content">
-          <li><a href="https://usrbinblog.com/2019/02/27/lexical-scoping-and-improv/">Educational Content</a></li>
+          <li><a style={{ textDecoration: 'underline' }} href="https://usrbinblog.com/2019/02/27/lexical-scoping-and-improv/">Educational Content</a></li>
           <li>
-            <a href="https://www.youtube.com/watch?v=VSkXyuXzwlc">Video Demos</a>
+            <a style={{ textDecoration: 'underline' }} href="https://www.youtube.com/watch?v=VSkXyuXzwlc">Video Demos</a>
             {' '}
 and
             {' '}
-            <a href="https://blog.algolia.com/vue-instantsearch-v2/">Blog Posts</a>
+            <a style={{ textDecoration: 'underline' }} href="https://blog.algolia.com/vue-instantsearch-v2/">Blog Posts</a>
           </li>
-          <li><a href="https://www.youtube.com/watch?v=rbnneSpFp3I">Live Talks</a></li>
-          <li><a href="https://quirky-pasteur-183694.netlify.com/">Web Apps</a></li>
+          <li><a style={{ textDecoration: 'underline' }} href="https://www.youtube.com/watch?v=rbnneSpFp3I">Live Talks</a></li>
+          <li><a style={{ textDecoration: 'underline' }} href="https://quirky-pasteur-183694.netlify.com/">Web Apps</a></li>
           <li>Web Sites (like the one you&apos;re on right now! :))</li>
           <li>Project Management</li>
           <li>Mobile Apps</li>
