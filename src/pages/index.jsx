@@ -11,7 +11,8 @@ class IndexPage extends Component {
     super();
     this.state = {
       showBlurbBlog: false,
-      showBlurbYouTube: false,
+      showBlurbYouTube: true,
+      showBlurbStream: false,
     };
   }
 
@@ -19,6 +20,7 @@ class IndexPage extends Component {
     this.setState({
       showBlurbYouTube: false,
       showBlurbBlog: false,
+      showBlurbStream: false,
     });
   }
 
@@ -33,7 +35,7 @@ class IndexPage extends Component {
 
 
   render() {
-    const { showBlurbBlog, showBlurbYouTube } = this.state;
+    const { showBlurbBlog, showBlurbYouTube, showBlurbStream } = this.state;
     return (
       <div>
         <section id="home" className="hero is-fullheight is-light is-bold">
@@ -64,14 +66,18 @@ class IndexPage extends Component {
                   <h2 className="subtitle">
 I like
                     {' '}
-                    <span style={{ textDecoration: 'underline' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('Blog')} onClick={() => this.openBlurb('Blog')}>writing</span>
+                    <span style={{ textDecoration: 'underline', color: 'blue' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('Blog')} onClick={() => this.openBlurb('Blog')}>writing</span>
 , coding,
                     {' '}
-                    <span style={{ textDecoration: 'underline' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('YouTube')} onClick={() => this.openBlurb('YouTube')}>making videos</span>
-, acting, giving talks, and reading.
+                    <span style={{ textDecoration: 'underline', color: 'blue' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('YouTube')} onClick={() => this.openBlurb('YouTube')}>making videos</span>
+, acting,
+                    {' '}
+                    <span style={{ textDecoration: 'underline', color: 'blue' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('Stream')} onClick={() => this.openBlurb('Stream')}>DJing</span>
+, giving talks, and reading.
                   </h2>
                   { showBlurbBlog && <Blurb link="https://usrbinblog.com/" onClick={() => this.closeBlurb('Blog')} header="/usr/bin/blog/" body="is a tech blog where I discuss tech, personal finance, and personal development, with occasional smatterings of etc." /> }
-                  { showBlurbYouTube && <Blurb link="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g" onClick={() => this.closeBlurb('YouTube')} header="The Important Bits" body="is a channel focused on curiousity and rapid acquisition of skills using the Pareto Principle to find where input has outsized impact." /> }
+                  { showBlurbYouTube && <Blurb link="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g" onClick={() => this.closeBlurb('YouTube')} header="The Important Bits" body="is a YouTube channel focused on allowing you to feel comfortable in conversation about any topic, and a podcast where we get to learn firsthand from experts about how they have learned the skills they have." /> }
+                  { showBlurbStream && <Blurb link="https://mixer.com/_emp" onClick={() => this.closeBlurb('Stream')} header="EMP" body="is a Mixer stream where I live code DJ using TidalCycles and TidalVim. The music is EDM and highly improvisational in nature." /> }
                 </div>
                 <div className="column">
                   <figure className="image">
@@ -104,6 +110,10 @@ I like
 |
               {' '}
               <span><a href="https://usrbinblog.com/">Blog</a></span>
+              {' '}
+|
+              {' '}
+              <span><a href="https://mixer.com/_emp">Stream</a></span>
             </p>
           </div>
         </footer>
