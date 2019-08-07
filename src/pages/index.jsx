@@ -114,6 +114,10 @@ I like
 |
               {' '}
               <span><a href="https://mixer.com/_emp">Stream</a></span>
+              {' '}
+|
+              {' '}
+              <span><a href="https://soundcloud.com/user-250346666">soundcloud</a></span>
             </p>
           </div>
         </footer>
