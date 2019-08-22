@@ -6,6 +6,8 @@ import algoliaLogo from '../images/algolia-logo.png';
 import NavBar from '../components/navBar';
 import OrgLogo from '../components/orgLogo';
 import modelPhoto from '../images/model.jpg';
+import fwbkLogo from '../images/fwbk.png';
+import mlhLogo from '../images/Major_League_Hacking_logo.png';
 
 
 const About = () => (
@@ -56,6 +58,8 @@ and
           <OrgLogo to="https://www.hbo.com/" alt="HBO Logo" imgSrc={hboLogo} />
           <OrgLogo to="https://www.algolia.com/" alt="Algolia Logo" imgSrc={algoliaLogo} />
           <OrgLogo to="https://www.rochester.edu/" alt="University of Rochester Logo" imgSrc={urLogo} />
+          <OrgLogo to="https://www.fashionweekbrooklyn.com/" alt="Fashion Week Brooklyn" imgSrc={fwbkLogo} />
+          <OrgLogo to="https://mlh.io/" alt="MLH" imgStyle={{ marginTop: '15%' }} imgSrc={mlhLogo} />
         </nav>
       </div>
     </div>
