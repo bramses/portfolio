@@ -92,7 +92,7 @@ I like
         <footer className="footer" id="footer">
           <div className="content has-text-centered">
             <p>
-              For all buisness inquires, contact:
+              For all business inquires, contact:
               {' '}
               <strong>paretobits@gmail.com</strong>
             </p>
