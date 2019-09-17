@@ -44,7 +44,7 @@ and
           </li>
           <li><a style={{ textDecoration: 'underline' }} href="https://www.youtube.com/watch?v=rbnneSpFp3I">Live Talks</a></li>
           <li><a style={{ textDecoration: 'underline' }} href="https://quirky-pasteur-183694.netlify.com/">Web Apps</a></li>
-          <li>Web Sites (like the one you&apos;re on right now! :))</li>
+          <li>Web Sites (Wordpress, Squarespace, JAMStack, Custom)</li>
           <li>Project Management</li>
           <li>Mobile Apps</li>
           <li>Positioning and Marketing</li>
