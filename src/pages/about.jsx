@@ -44,10 +44,9 @@ and
           </li>
           <li><a style={{ textDecoration: 'underline' }} href="https://www.youtube.com/watch?v=rbnneSpFp3I">Live Talks</a></li>
           <li><a style={{ textDecoration: 'underline' }} href="https://quirky-pasteur-183694.netlify.com/">Web Apps</a></li>
-          <li>Web Sites (Wordpress, Squarespace, JAMStack, Custom)</li>
-          <li>Project Management</li>
+          <li>Web Sites (Wordpress, Squarespace, JAMStack [the portfolio you&#39;re on now], Custom)</li>
           <li>Mobile Apps</li>
-          <li>Positioning and Marketing</li>
+          <li>One on One Calls to help you set clear goals for your business</li>
         </ul>
       </div>
     </div>

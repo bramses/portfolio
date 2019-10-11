@@ -4,14 +4,14 @@ import '../components/smoothScroll';
 import About from './about';
 import './bulma.scss';
 import Blurb from '../components/blurb';
-
+import SiteHeroHeader from '../components/heroHead';
 
 class IndexPage extends Component {
   constructor() {
     super();
     this.state = {
-      showBlurbBlog: false,
-      showBlurbYouTube: true,
+      showBlurbBlog: true,
+      showBlurbYouTube: false,
       showBlurbStream: false,
     };
   }
@@ -33,51 +33,69 @@ class IndexPage extends Component {
     });
   }
 
-
   render() {
     const { showBlurbBlog, showBlurbYouTube, showBlurbStream } = this.state;
     return (
       <div>
         <section id="home" className="hero is-fullheight is-light is-bold">
-          <div className="hero-head">
-            <nav className="navbar">
-              <div className="container">
-                <div className="navbar-brand">
-                  <a className="navbar-item" href="/">
-                    <h1 className="title">Bram Adams</h1>
-                  </a>
-                </div>
-                <div className="navbar-menu">
-                  <div className="navbar-end">
-                    <a href="#about" className="navbar-item">
-                      About
-                    </a>
-                    <a href="#footer" className="navbar-item">Contact</a>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
+          <SiteHeroHeader />
           <div className="hero-body">
             <div className="container">
               <div className="columns">
                 <div className="column">
                   <h1 className="title">Hi, I&apos;m Bram.</h1>
                   <h2 className="subtitle">
-I like
+                    I like
                     {' '}
-                    <span style={{ textDecoration: 'underline', color: 'blue' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('Blog')} onClick={() => this.openBlurb('Blog')}>writing</span>
-, coding,
+                    <span
+                      style={{ textDecoration: 'underline', color: 'blue' }}
+                      tabIndex={0}
+                      role="textbox"
+                      onKeyPress={() => this.openBlurb('Blog')}
+                      onClick={() => this.openBlurb('Blog')}
+                    >
+                      writing
+                    </span>
+                    , creative coding,
                     {' '}
-                    <span style={{ textDecoration: 'underline', color: 'blue' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('YouTube')} onClick={() => this.openBlurb('YouTube')}>making videos</span>
-, acting,
+                    <span
+                      style={{ textDecoration: 'underline', color: 'blue' }}
+                      tabIndex={0}
+                      role="textbox"
+                      onKeyPress={() => this.openBlurb('YouTube')}
+                      onClick={() => this.openBlurb('YouTube')}
+                    >
+                      making videos
+                    </span>
                     {' '}
-                    <span style={{ textDecoration: 'underline', color: 'blue' }} tabIndex={0} role="textbox" onKeyPress={() => this.openBlurb('Stream')} onClick={() => this.openBlurb('Stream')}>DJing</span>
-, giving talks, and reading.
+                    {/* <span style={{ textDecoration: 'underline', color: 'blue' }}
+                    tabIndex={0} role="textbox"
+                  onKeyPress={() => this.openBlurb('Stream')}
+                  onClick={() => this.openBlurb('Stream')}>DJing</span> */}
+                    , giving talks, and reading.
                   </h2>
-                  { showBlurbBlog && <Blurb link="https://usrbinblog.com/" onClick={() => this.closeBlurb('Blog')} header="/usr/bin/blog/" body="is a tech blog where I discuss tech, personal finance, and personal development, with occasional smatterings of etc." /> }
-                  { showBlurbYouTube && <Blurb link="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g" onClick={() => this.closeBlurb('YouTube')} header="The Important Bits" body="is a YouTube channel focused on allowing you to feel comfortable in conversation about any topic, and a podcast where we get to learn firsthand from experts about how they have learned the skills they have." /> }
-                  { showBlurbStream && <Blurb link="https://mixer.com/_emp" onClick={() => this.closeBlurb('Stream')} header="EMP" body="is a Mixer stream where I live code DJ using TidalCycles and TidalVim. The music is EDM and highly improvisational in nature." /> }
+                  {showBlurbBlog && (
+                    <Blurb
+                      link="https://usrbinblog.com/"
+                      onClick={() => this.closeBlurb('Blog')}
+                      header="/usr/bin/blog/"
+                      body="is a blog where I discuss optimization, in tech and life."
+                    />
+                  )}
+                  {showBlurbYouTube && (
+                    <Blurb
+                      link="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g"
+                      onClick={() => this.closeBlurb('YouTube')}
+                      header="The Important Bits"
+                      body="is a YouTube channel focused on allowing you to feel comfortable in conversation about any topic, and a podcast where we get to learn firsthand from experts about how they have learned the skills they have."
+                    />
+                  )}
+                  {/* TODO add TikTok blurb
+                  https://m.tiktok.com/h5/share/usr/6719259012707763205.html?language=en&sec_uid=MS4wLjABAAAAq7zH4S6PSwmek9z8gAEZtD7YKQ5Hkdy3DwY4wyT-Vi8kaHUMk-Qoj3WJaSMx8DOX&u_code=d7e11hc0e092gh&utm_campaign=client_share&app=musically&utm_medium=ios&user_id=6719259012707763205&tt_from=copy&utm_source=copy
+                  */}
+                  {/* TODO decide if inactive projects should be kept as
+                   links or if I should narrow in */}
+                  {/* { showBlurbStream && <Blurb link="https://github.com/bramses/tidal" onClick={() => this.closeBlurb('Stream')} header="EMP" body="is a Mixer stream where I live code DJ using TidalCycles and TidalVim. The music is EDM and highly improvisational in nature." /> } */}
                 </div>
                 <div className="column">
                   <figure className="image">
@@ -97,27 +115,39 @@ I like
               <strong>paretobits@gmail.com</strong>
             </p>
             <p>
-              <span><a href="https://www.linkedin.com/in/brammadams/">LinkedIn</a></span>
+              <span>
+                <a href="https://www.linkedin.com/in/brammadams/">LinkedIn</a>
+              </span>
               {' '}
-|
+              |
               {' '}
-              <span><a href="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g">YouTube</a></span>
+              <span>
+                <a href="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g">YouTube</a>
+              </span>
               {' '}
-|
+              |
               {' '}
-              <span><a href="https://github.com/bramses">GitHub</a></span>
+              <span>
+                <a href="https://github.com/bramses">GitHub</a>
+              </span>
               {' '}
-|
+              |
               {' '}
-              <span><a href="https://usrbinblog.com/">Blog</a></span>
+              <span>
+                <a href="https://usrbinblog.com/">Blog</a>
+              </span>
               {' '}
-|
+              |
               {' '}
-              <span><a href="https://mixer.com/_emp">Stream</a></span>
+              <span>
+                <a href="https://mixer.com/_emp">Stream</a>
+              </span>
               {' '}
-|
+              |
               {' '}
-              <span><a href="https://soundcloud.com/user-250346666">soundcloud</a></span>
+              <span>
+                <a href="https://soundcloud.com/user-250346666">soundcloud</a>
+              </span>
             </p>
           </div>
         </footer>
