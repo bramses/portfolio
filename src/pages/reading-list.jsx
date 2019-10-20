@@ -30,7 +30,7 @@ const ReadingList = () => (
       link="https://amzn.to/2oG00LB"
       imgAlt="Zero to One"
       imgLink="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1414347376l/18050143.jpg"
-      description={[`I'm a big fan of this book because it's written by someone who has started a major company (Paypal).`,  <br/>, <i>Zero to One</i>, ` is a short read, and Mr. Thiel takes an objective look at what makes startups successful. My favorite takeaway from the book was recognizing the value of companies that take vertical risks. A vertical risk is creating new technologies for society instead of making existing ones better.`]}
+      description={[`I'm a big fan of this book because it's written by someone who has started a major company (Paypal).`,  <br />, <i>Zero to One</i>, ` is a short read, and Mr. Thiel takes an objective look at what makes startups successful. My favorite takeaway from the book was recognizing the value of companies that take vertical risks. A vertical risk is creating new technologies for society instead of making existing ones better.`]}
     />
     <Book
       title="Siddhartha"

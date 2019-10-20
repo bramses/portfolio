@@ -116,37 +116,37 @@ class IndexPage extends Component {
             </p>
             <p>
               <span>
-                <a href="https://www.linkedin.com/in/brammadams/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/brammadams/">linkedin</a>
               </span>
               {' '}
               |
               {' '}
               <span>
-                <a href="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g">YouTube</a>
+                <a href="https://www.youtube.com/channel/UCPkoAWQ1lFJ53kI61Kt7p-g">youtube</a>
               </span>
               {' '}
               |
               {' '}
               <span>
-                <a href="https://github.com/bramses">GitHub</a>
+                <a href="https://github.com/bramses">github</a>
               </span>
               {' '}
               |
               {' '}
               <span>
-                <a href="https://usrbinblog.com/">Blog</a>
+                <a href="https://usrbinblog.com/">blog</a>
               </span>
               {' '}
               |
               {' '}
               <span>
-                <a href="https://mixer.com/_emp">Stream</a>
+                <a href="https://www.instagram.com/_bramses/">instagram</a>
               </span>
               {' '}
               |
               {' '}
               <span>
-                <a href="https://soundcloud.com/user-250346666">soundcloud</a>
+                <a href="https://twitter.com/adams_bram">twitter</a>
               </span>
             </p>
           </div>
