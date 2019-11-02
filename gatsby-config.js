@@ -20,6 +20,14 @@ module.exports = {
         trackingId: 'UA-145228656-1',
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Permanent Marker']
+        }
+      }
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
