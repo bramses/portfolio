@@ -1,4 +1,5 @@
 import React from 'react';
+import "./bulma.scss";
 import StyledBackgroundSection from '../components/styledBackground';
 
 const LandingPage = () => (
