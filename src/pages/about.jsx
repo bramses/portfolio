@@ -20,7 +20,7 @@ const About = () => (
         <h1 className="title">About Me</h1>
         <h2 className="subtitle">What I Am:</h2>
         <ul className="content">
-          <li>A person interested in many different fields</li>
+          <li>A person interested in the intersection of art and technology.</li>
         </ul>
         <h2 className="subtitle">Where I&apos;ve Been:</h2>
         <ul className="content">
@@ -46,7 +46,7 @@ and
           <li><a style={{ textDecoration: 'underline' }} href="https://quirky-pasteur-183694.netlify.com/">Web Apps</a></li>
           <li>Web Sites (Wordpress, Squarespace, JAMStack [the portfolio you&#39;re on now], Custom)</li>
           <li>Mobile Apps</li>
-          <li>One on One Calls to help you set clear goals for your business</li>
+          <li>Creative Experiences leveraging Technology (WebGL, d3, oF, TouchDesigner, etc.)</li>
         </ul>
       </div>
     </div>

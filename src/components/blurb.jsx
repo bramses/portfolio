@@ -12,9 +12,8 @@ const Blurb = ({
     <div className="message-body">
       <p>
         <b>{header}</b>
-        {' '}
-        {body}
       </p>
+      <p>{body}</p>
       <br />
       <p>
         <a href={link}><b>Link</b></a>
